@@ -11,3 +11,9 @@ Ricordatevi di spezzare il problema in sottoproblemi come visto a lezione nel fi
 Buon lavoro!
 
 Scaletta:
+creare una variabile per immagazzinare il numero dei km da percorrere 
+creare una variabile per l'età del passengero.
+inizializzare una variabile per il prezzo totale del viaggio in base ai km
+creare un if 
+creare un else-if
+definire la variabile per il prezzo totale con massimo due decimali
