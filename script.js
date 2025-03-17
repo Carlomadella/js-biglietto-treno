@@ -6,19 +6,18 @@ let priceKm = 0.21;
 // console.log(passengerAge)
 
 let prezzoIntero = (parseInt(priceKm * journeyLenght));
-
-// console.log("Il prezzo finale è di", prezzoIntero, "€");
-
-let prezzoUnder;
-let prezzoOver;
+let prezzoTotale = prezzoIntero;
+// console.log("Il prezzo finale è di", prezzoTotale, "€");
 
 if (passengerAge<18) {
-    prezzoUnder = (prezzoIntero-( 20/100 ))
-    console.log("Il prezzo del biglietto è scontato del 20%, perciò il totale sarà di", prezzoUnder, "€")
+    prezzoTotale = (prezzoIntero-( 20/100 ))
+    // console.log("Il prezzo del biglietto è scontato del 20%, perciò il totale sarà di", prezzoTotale, "€")
 } 
 else if (passengerAge>65){
-    prezzoOver = (prezzoIntero-( 40/100 ))
-    console.log("Il prezzo del biglietto è scontato del 40%, perciò il totale sarà di", prezzoOver, "€")
+    prezzoTotale = (prezzoIntero-( 40/100 ))
+    // console.log("Il prezzo del biglietto è scontato del 40%, perciò il totale sarà di", prezzoTotale, "€")
 }
 
+prezzoTotale = (prezzoTotale).toFixed(2); 
 
+console.log("Il prezzo totale da pagare è di", prezzoTotale, "€")
